@@ -1,56 +1,70 @@
 body {
-    background-color: #f7f7f7;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+    font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
-    padding: 0 20px;
+    padding: 40px 20px;
     color: #333;
 }
 
+/* Page Title */
 h1 {
     text-align: center;
-    color: #0066cc;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    color: #1a237e;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
 }
 
-h2 {
-    color: #333;
-    margin-bottom: 8px;
+/* Team container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Container to center content and control width */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 25px 35px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 25px 0;
-}
-
-.back-link {
+/* Individual member card */
+.team-member {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px 25px;
+    width: 230px;
     text-align: center;
-    margin-top: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.back-link a {
-    color: #0066cc;
-    font-weight: bold;
+/* Hover effect for card */
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Name */
+.team-member h2 {
+    color: #0d47a1;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+/* Role */
+.team-member p {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Button-like contact links */
+.team-member a {
+    display: inline-block;
+    background: #2196f3;
+    color: white;
     text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background 0.2s ease;
 }
 
-.back-link a:hover {
-    color: #e67e22;
+.team-member a:hover {
+    background: #0d47a1;
 }
