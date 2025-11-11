@@ -57,10 +57,30 @@ a:hover {
     color: #e67e22;
 }
 
-/* Small footer or info text */
 footer {
     text-align: center;
     font-size: 0.9em;
     color: #555;
     margin: 30px 0;
+}
+
+.team-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team-link a {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.team-link a:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
 }
